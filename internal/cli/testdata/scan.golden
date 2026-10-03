@@ -1,0 +1,18 @@
+Deadcode Scan
+
+Scanned: 1 files, 1 symbols
+Reachable/preserved: 0
+Candidates: 1
+Safe to delete: 0
+Needs review: 1
+Kept: 0
+Cache hits: 0; model calls: 0
+
+index.ts:1  dead
+  ID: index.ts:0:function
+  Decision: REVIEW
+  Reason: unreachable from known entry points
+  References: 0; exported: false; side effects: false
+  Framework: node; entrypoint: false; public: false
+  Dynamic risk: false; analysis complete: true
+  Policy: no model decision available

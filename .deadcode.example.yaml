@@ -1,0 +1,15 @@
+version: 1
+analysis:
+  exclude: ["**/*.generated.ts", "**/node_modules/**"]
+jev:
+  model: jev-1.13
+  concurrency: 8
+  timeout_seconds: 30
+policy:
+  auto_delete_probability: 0.98
+  max_runtime_reachability: 0.05
+  max_framework_required_probability: 0.05
+  max_side_effect_risk: 0.05
+  min_deletion_safety: 2.9
+cache:
+  enabled: true
